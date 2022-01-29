@@ -7,13 +7,15 @@ export const get_jnotice=(params={})=>{
     })
 }
 
-// export const get_userList=(params={})=>{
-//     return request({
-//         url:'/adminapi/user/user_level/vip_list',
-//         method:"get",
-//         params
-//     })
-// }
+
+export const listMenus = (params) =>{
+    return request({
+        url:'/adminapi/user/user',
+        method:'get',
+        params
+    })
+}
+
 
 export const get_userList = (params) => {
    return request({
